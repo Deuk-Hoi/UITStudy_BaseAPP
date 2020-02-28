@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/custom_resultlist"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/ordernumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주문번호 : "
+            android:textSize="21dp"
+            android:textColor="#000000"
+            android:singleLine="true"/>
+        <TextView
+            android:id="@+id/ordernum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21dp"
+            android:layout_toRightOf="@id/ordernumber"
+            android:layout_marginLeft="15dp"
+            android:text="1"/>
+        <TextView
+            android:id="@+id/main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="메인 메뉴 : "
+            android:textSize="18dp"
+            android:layout_below="@id/ordernumber"/>
+
+        <TextView
+            android:id="@+id/Mainmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBaseline="@id/main"
+            android:text="메인메뉴 넣는칸"
+            android:layout_toRightOf="@id/main"/>
+
+        <TextView
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="추가 메뉴 : "
+            android:textSize="18dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/main"
+            />
+
+        <TextView
+            android:id="@+id/Submenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:text="추가메뉴 넣는칸"
+            android:textSize="18dp"
+            android:layout_toRightOf="@id/sub"
+            android:layout_alignBaseline="@id/sub"
+            />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* 주문자 정보"
+            android:layout_below="@id/Submenu"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/Ordername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주문자 성함 : "
+            android:layout_below="@id/info"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/ordername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:text="주문자 이름"
+            android:textSize="18dp"
+            android:layout_toRightOf="@id/Ordername"
+            android:layout_alignBaseline="@id/Ordername"
+            />
+
+        <TextView
+            android:id="@+id/Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주소 : "
+            android:layout_alignEnd="@id/Ordername"
+            android:layout_below="@id/ordername"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:text="충남 천안시 동남구 병천면 병천2로 86 신세계 아파트 204호"
+            android:textSize="18dp"
+            android:layout_toRightOf="@id/Address"
+            android:layout_alignBaseline="@id/Address"
+            />
+        <TextView
+            android:id="@+id/Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="휴대폰 : "
+            android:textSize="18dp"
+            android:layout_alignEnd="@id/Ordername"
+            android:layout_alignBaseline="@id/phonenum"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/phonenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:text="010-0000-0000"
+            android:textSize="18dp"
+            android:layout_below="@id/address"
+            android:layout_toRightOf="@id/Phone"
+            />
+        <TextView
+            android:id="@+id/Request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Phone"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignEnd="@id/Ordername"
+            android:text="요청사항 : "/>
+        <TextView
+            android:id="@+id/Requesttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:text="맛있게요"
+            android:textSize="18dp"
+            android:layout_below="@id/phonenum"
+            android:layout_toRightOf="@id/Request"/>
+    </RelativeLayout>
+
+</LinearLayout>

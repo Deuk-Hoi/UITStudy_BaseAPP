@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Seminar_3rd_ImageTest">
+
+    <ImageView
+        android:id="@+id/flower"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/sunflower"/>
+
+    <ImageView
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#000000"
+        android:layout_below="@id/flower"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageButton
+        android:id="@+id/imagebtn"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/sunflower"
+        android:layout_below="@id/divide"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagebtn"
+        android:text="그림들아 바뀌어라!"/>
+
+
+
+</RelativeLayout>

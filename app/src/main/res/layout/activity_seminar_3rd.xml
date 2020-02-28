@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Seminar_3rd">
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다이어로그 테스트"/>
+    <Button
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="프로그래스 bar"/>
+    <Button
+        android:id="@+id/progressSpin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="프로그래스 Spin"/>
+    <Button
+        android:id="@+id/imageTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이미지테스트"/>
+    <Button
+        android:id="@+id/homework"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="숙제"/>
+
+</LinearLayout>

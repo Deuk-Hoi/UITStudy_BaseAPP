@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UITstudy</string>
+
+    <string name="select_user">인물 선택</string>
+    <string name="user_num">번호 : </string>
+    <string name="user_name">이름 : </string>
+
+</resources>

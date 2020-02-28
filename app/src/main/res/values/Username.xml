@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Usernamelist">
+        <item >Select</item>
+        <item >Kim Deuk Hoi</item>
+        <item >Kim Young jea</item>
+        <item >Kwon Soon Young</item>
+        <item >Lee Kyu Hwan</item>
+        <item >Song Jun Ha</item>
+        <item >Kim Min soo</item>
+        <item >Kwon Hoi Sung</item>
+    </string-array>
+
+</resources>

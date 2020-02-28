@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Seminar_5th_checkbox">
+
+    <TextView
+        android:id="@+id/menuname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000000"
+        android:text="제육 덮밥"/>
+
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_below="@id/menuname"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/rice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="공기밥 추가"/>
+        <CheckBox
+            android:id="@+id/egg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rice"
+            android:layout_marginRight="20dp"
+            android:layout_alignBaseline="@id/rice"
+            android:text="계란후라이 추가"/>
+        <CheckBox
+            android:id="@+id/cheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/egg"
+            android:layout_alignBaseline="@id/egg"
+            android:text="치즈 추가"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/menu"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/menu"
+        android:text="주문 내역 : "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/orderlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/order"
+        android:layout_alignBaseline="@id/order"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:text="메뉴를 체크하시오"/>
+
+</RelativeLayout>

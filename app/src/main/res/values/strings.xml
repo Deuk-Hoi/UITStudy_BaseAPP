@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UITstudy</string>
+
+    <string name="select_user">Select User</string>
+    <string name="user_num">Number : </string>
+    <string name="user_name">Name : </string>
+
+</resources>

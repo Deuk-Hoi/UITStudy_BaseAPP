@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Seminar_6th_AsyncTask">
+
+    <TextView
+        android:id="@+id/Userinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UIT 회원 정보 등록"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/usernum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원 학번"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/Userinfo"/>
+
+    <EditText
+        android:id="@+id/usernumedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernum"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@id/username"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원 이름"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/usernumedit"/>
+
+    <EditText
+        android:id="@+id/usernameedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@id/username"/>
+
+    <TextView
+        android:id="@+id/usermajor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원 전공"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/usernameedit"/>
+
+    <EditText
+        android:id="@+id/usermajoredit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usermajor"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@id/username"/>
+
+    <Button
+        android:id="@+id/usersave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:background="#6565FC"
+        android:text="등록하기"/>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.uitstudy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Seminar_8th_Spinner"></activity>
+        <activity android:name=".Seminar_8th" />
+        <activity android:name=".Seminar_7th" />
+        <activity android:name=".Seminar_7th_Homework" />
+        <activity android:name=".Seminar_6th_AsyncTask" />
+        <activity android:name=".Seminar_6th" />
+        <activity android:name=".Seminar_5th_Homework_Bill" />
+        <activity android:name=".Seminar_5th_Homework" />
+        <activity android:name=".Seminar_5th_SharedPreferences" />
+        <activity android:name=".Seminar_5th_checkbox2" />
+        <activity android:name=".Seminar_5th_checkbox" />
+        <activity android:name=".Seminar_4th_scroll" />
+        <activity android:name=".Seminar_4th_web" />
+        <activity android:name=".Seminar_4th_activitychange" />
+        <activity android:name=".Seminar_4th" />
+        <activity android:name=".Seminar_5th_radio" />
+        <activity android:name=".Seminar_5th_Listview" />
+        <activity android:name=".Seminar_5th" />
+        <activity android:name=".Seminar_3rd_Homework" />
+        <activity android:name=".Seminar_3rd_ImageTest" />
+        <activity android:name=".Seminar_3rd" />
+        <activity android:name=".Seminar_2nd" />
+        <activity android:name=".Seminar_1st" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Usernamelist">
+        <item >선택하시오</item>
+        <item >김득회</item>
+        <item >김영재</item>
+        <item >권순영</item>
+        <item >이규환</item>
+        <item >송준하</item>
+        <item >김민수</item>
+        <item >권회성</item>
+    </string-array>
+
+</resources>

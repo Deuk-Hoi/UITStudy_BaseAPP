@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Seminar_7th_Homework">
+
+    <TextView
+        android:id="@+id/marketname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="해바라기"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <ScrollView
+        android:id="@+id/orderScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/save"
+        android:layout_below="@id/marketname">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/mainmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/Menus"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:text="* 메인 메뉴"/>
+
+            <RadioGroup
+                android:id="@+id/Menus"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mainmenu"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/jeayuk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="제육덮밥"/>
+                <RadioButton
+                    android:id="@+id/bulgogi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/jeayuk"
+                    android:text="불고기 덮밥"/>
+                <RadioButton
+                    android:id="@+id/kimchi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/bulgogi"
+                    android:text="김치찌개"/>
+                <RadioButton
+                    android:id="@+id/budea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/kimchi"
+                    android:text="부대찌개"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/sidemenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Menus"
+                android:layout_alignStart="@id/Menus"
+                android:textSize="20dp"
+                android:textColor="#0000FF"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="* 추가 메뉴"/>
+            <RelativeLayout
+                android:id="@+id/side"
+                android:layout_below="@id/sidemenu"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/Rice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="공기밥 추가"/>
+                <CheckBox
+                    android:id="@+id/Egg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/Rice"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignBaseline="@id/Rice"
+                    android:text="계란후라이 추가"/>
+                <CheckBox
+                    android:id="@+id/Cheese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/Egg"
+                    android:layout_alignBaseline="@id/Egg"
+                    android:text="치즈 추가"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/writeorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/Menus"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/side"
+                android:text="주문서 작성"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/writeorder"
+                android:layout_alignStart="@id/writeorder"
+                android:layout_marginTop="25dp"
+                android:text="주문자 이름 : "
+                android:textSize="17dp"/>
+
+            <EditText
+                android:id="@+id/orderEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/order"
+                android:layout_alignBaseline="@id/order"
+                android:layout_marginRight="20dp"
+                android:singleLine="true"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order"
+                android:layout_alignStart="@id/order"
+                android:layout_marginTop="25dp"
+                android:text="배달 주소 : "
+                android:textSize="17dp"/>
+
+            <EditText
+                android:id="@+id/addressEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/address"
+                android:layout_alignBaseline="@id/address"
+                android:layout_alignStart="@id/orderEdit"
+                android:singleLine="true"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:id="@+id/phonnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address"
+                android:layout_alignStart="@id/address"
+                android:layout_marginTop="25dp"
+                android:text="휴대폰 번호 : "
+                android:textSize="17dp"/>
+
+            <EditText
+                android:id="@+id/phonnumEdit"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/phonnum"
+                android:layout_alignBaseline="@id/phonnum"
+                android:layout_alignStart="@id/orderEdit"
+                android:singleLine="true"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:id="@+id/request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phonnum"
+                android:layout_alignStart="@id/phonnum"
+                android:layout_marginTop="25dp"
+                android:text="주문시 요청 사항 "
+                android:textSize="17dp"/>
+
+            <EditText
+                android:id="@+id/requestEdit"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="textMultiLine"
+                android:layout_below="@id/request"
+                android:gravity="top"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:background="#6565FC"
+        android:text="주문하기"/>
+
+</RelativeLayout>

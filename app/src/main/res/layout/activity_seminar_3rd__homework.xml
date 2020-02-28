@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Seminar_3rd_Homework">
+
+    <ImageView
+        android:id="@+id/first"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/daram"
+        android:layout_marginTop="30dp"/>
+
+    <RelativeLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:text="up"/>
+        <Button
+            android:id="@+id/down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/up"
+            android:layout_centerHorizontal="true"
+            android:text="down"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/second"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/btnLayout"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bird"
+        android:layout_marginTop="50dp"/>
+
+
+</RelativeLayout>

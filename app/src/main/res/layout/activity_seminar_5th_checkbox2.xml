@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Seminar_5th_checkbox2">
+
+    <TextView
+        android:id="@+id/marketname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000000"
+        android:text="득회네 과일가게"/>
+
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/marketname"
+        android:layout_centerHorizontal="true">
+
+        <CheckBox
+            android:id="@+id/apple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사과"/>
+
+        <CheckBox
+            android:id="@+id/banana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/apple"
+            android:layout_marginLeft="15dp"
+            android:text="바나나"/>
+
+        <CheckBox
+            android:id="@+id/kiwi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/banana"
+            android:layout_marginLeft="15dp"
+            android:text="키위"/>
+
+        <CheckBox
+            android:id="@+id/cherry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/kiwi"
+            android:layout_marginLeft="15dp"
+            android:text="체리"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:text="가격 : "
+        android:layout_alignStart="@id/menu"
+        android:layout_below="@id/menu"/>
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 원"
+        android:textSize="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignBaseline="@id/price"
+        android:layout_toRightOf="@id/price"/>
+
+</RelativeLayout>

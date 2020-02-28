@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Seminar_5th_Homework">
+
+    <TextView
+        android:id="@+id/marketname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="해바라기"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/menus"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/marketname"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/jeayuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제육덮밥"/>
+        <RadioButton
+            android:id="@+id/bulgogi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/jeayuk"
+            android:text="불고기 덮밥"/>
+        <RadioButton
+            android:id="@+id/kimchi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bulgogi"
+            android:text="김치찌개"/>
+        <RadioButton
+            android:id="@+id/budea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/kimchi"
+            android:text="부대찌개"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/sidemenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menus"
+        android:layout_alignStart="@id/menus"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="* 추가 메뉴"/>
+    <RelativeLayout
+        android:id="@+id/side"
+        android:layout_below="@id/sidemenu"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/rice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="공기밥 추가"/>
+        <CheckBox
+            android:id="@+id/egg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rice"
+            android:layout_marginRight="20dp"
+            android:layout_alignBaseline="@id/rice"
+            android:text="계란후라이 추가"/>
+        <CheckBox
+            android:id="@+id/cheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/egg"
+            android:layout_alignBaseline="@id/egg"
+            android:text="치즈 추가"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/menus"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/side"
+        android:text="주문 내역"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/maindish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order"
+        android:layout_alignStart="@id/order"
+        android:layout_marginTop="15dp"
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:text="메인메뉴 : "/>
+
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/maindish"
+        android:layout_alignBaseline="@id/maindish"
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:text=" 메뉴 이름"/>
+
+    <TextView
+        android:id="@+id/adddish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maindish"
+        android:layout_alignEnd="@id/maindish"
+        android:layout_marginTop="15dp"
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:text="추가메뉴 : "/>
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/adddish"
+        android:layout_alignBaseline="@id/adddish"
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:text=" 추가 메뉴 이름"/>
+
+    <CheckBox
+        android:id="@+id/menusave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:text="주모 늘 먹던걸로!!!"/>
+
+    <Button
+        android:id="@+id/logsave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:text="저장"/>
+
+
+
+</RelativeLayout>
